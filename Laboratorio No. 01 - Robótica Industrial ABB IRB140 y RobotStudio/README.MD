@@ -8,19 +8,19 @@
 
 | Nombre | URL del Repositorio |
 |--------|-------------------|
-| Integrante 1 | *(agregar URL)* |
-| Integrante 2 | *(agregar URL)* |
+| Julian Benitez | *(agregar URL)* |
+| Juan Salamanca | *(agregar URL)* |
 
 ---
 
 ## Descripción de la Solución
 
-El proyecto consiste en la **decoración automatizada de una torta virtual** usando un robot industrial ABB IRB 140 programado en RAPID. El robot, equipado con un marcador fijado al flanche, traza los nombres de los integrantes del grupo letra por letra sobre una superficie plana, usando trayectorias continuas y controladas mediante señales digitales de entrada y salida.
+El proyecto consiste en la **decoración automatizada de una torta virtual** usando un robot industrial ABB IRB 140 programado en RAPID. El robot, equipado con un marcador fijado al flanche junto con una herramienta diseñada por los integrantes del equipo, traza los nombres de los integrantes del grupo letra por letra sobre una superficie plana, usando trayectorias continuas y controladas mediante señales digitales de entrada y salida.
 
 ### Flujo general del sistema
 
 1. El sistema espera una **señal digital de entrada (DI_01 = 1)** para iniciar la rutina de decorado.
-2. El robot ejecuta secuencialmente las trayectorias de cada letra: **J, U, L, I, A, N** (primer nombre) y **F, E, L, I, P, E, O, B** (segundo nombre), regresando a la posición `Home_b` entre cada letra.
+2. El robot ejecuta secuencialmente las trayectorias de cada letra: **J, U, L, I, A, N** (primer nombre) y **F, E, L, I, P, E** (segundo nombre) y luego una figura, en este caso una cara feliz, regresando a la posición `Home_b` entre cada letra.
 3. Al finalizar, se activa la **señal de salida (DI_02 = 1)** y el robot espera confirmación para terminar.
 4. Una segunda señal controla el **transporte del pastel** mediante una banda transportadora.
 
@@ -162,7 +162,7 @@ Si DI_02 = 1:
 | A | `Path_A_1`, `Path_A_2`, `Path_A_3` | Dos diagonales + travesaño |
 | N | `Path_N_1`, `Path_N_2`, `Path_N_3` | Tres segmentos (dos verticales + diagonal) |
 
-### Segundo nombre — FELIPE OB *(decoración)*
+### Segundo nombre — FELIPE 
 
 | Letra | Procedimientos | Tipo de trayectoria |
 |-------|---------------|-------------------|
@@ -172,15 +172,14 @@ Si DI_02 = 1:
 | I | `Path_I_11` | Línea simple |
 | P | `Path_P_1`–`Path_P_4` | Líneas + semicírculo (MoveC) |
 | E | `Path_E_11`–`Path_E_14` | Líneas (vertical + tres horizontales) |
-| O | `Path_O_1`, `Path_O_2` | Dos líneas horizontales (representación simplificada) |
-| B | `Path_B_1`, `Path_B_2` | Línea + arco (MoveC) |
 
-### Decoración — CC (Círculos)
-
-| Elemento | Procedimientos | Tipo de trayectoria |
-|----------|---------------|-------------------|
-| C grande | `Path_C_1`, `Path_C_2` | Dos arcos MoveC (círculo completo) |
-| C pequeño | `Path_C_3`, `Path_C_4` | Dos arcos MoveC (círculo completo) |
+### Dibujo — CARA FELIZ *(decoración)*
+| Letra | Procedimientos | Tipo de trayectoria |
+|-------|---------------|-------------------|
+| O | `Path_O_1`, `Path_O_2` | Se reprensenta los ojos de la figura dos lineas |
+| B | `Path_B_1`, `Path_B_2` | Línea + arco representando la boca de la figura |
+| C grande | `Path_C_1`, `Path_C_2` | Dos arcos MoveC (círculo completo) repesenta el contorno de la cara feliz|
+| C pequeño | `Path_C_3`, `Path_C_4` | Dos arcos MoveC (círculo completo) repesenta el contorno de la cara feliz|
 
 ### Home
 
@@ -191,18 +190,9 @@ Si DI_02 = 1:
 
 ---
 
-## Video
-
-> El video contiene la simulación completa en **RobotStudio** y la implementación con los **robots reales ABB IRB 140**.  
-> Comienza con la introducción oficial del laboratorio **LabSIR**.
-
-**Enlace:** *(agregar enlace al video)*
-
----
 
 ## Referencias
 
 - ABB Robotics. *RAPID Reference Manual — Instructions, Functions and Data types*. 2024.
 - ABB Robotics. *IRB 140 Product Specification*.
-- ABB Robotics. *DSQC 652 — Module 3HAC025917-001/00 Datasheet*.
 - RobotStudio v5+, ABB Group.
