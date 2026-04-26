@@ -55,7 +55,12 @@ Lab01_Robotica/
 
 ## Herramienta Diseñada
 
-Se diseñó y construyó un **porta-marcador** para fijar al flanche del robot IRB 140. Este se diseña para impresión 3D en ácido poliláctico (PLA) y está compuesto de 2 partes, una base con la geometría de fijación adecuada para el flanche y una extensión cilíndrica con la cavidad perfecta para el marcador; como segunda pieza complementaria se diseña una tapa que permitirá posicionar el marcador dentro de la cavidad.
+Se diseñó y construyó un **porta-marcador** para fijar al flanche del robot IRB 140. Este se diseña para impresión 3D en ácido poliláctico (PLA) y está compuesto de 2 partes, una base con la geometría de fijación adecuada para el flanche y una extensión cilíndrica con la cavidad perfecta para el marcador, esta posee redondeos en bordes agudos para disminuir concentradores de esfuerzos además de unas pestañas en la punta del cilindro para la postura de la tapa y fijación del marcador.
+
+![Modelado base del porta-marcador](diagramas/images/base_modelado.png)
+
+
+; como segunda pieza complementaria se diseña una tapa que permitirá posicionar el marcador dentro de la cavidad.
 
 
 ```rapid
