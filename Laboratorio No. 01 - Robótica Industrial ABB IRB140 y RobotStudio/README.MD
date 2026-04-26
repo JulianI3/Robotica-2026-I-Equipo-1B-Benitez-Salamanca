@@ -60,18 +60,26 @@ Se diseñó y construyó un **porta-marcador** para fijar al flanche del robot I
 
 
 <p align="center">
-  <img src="Diagramas/Images/Base_modelado.png" width="600"><br>
+  <img src="Diagramas/Images/Base_modelado.png" width="500"><br>
   <em>Modelado base del porta-marcador</em>
 </p>
 
 Como segunda pieza complementaria se diseña una tapa que permitirá posicionar el marcador dentro de la cavidad, esta posee la geometría coincidente para acoplarse correctamente con las pestañas de la pieza anterior.
 
 <p align="center">
-  <img src="Diagramas/Images/Tapa_modelado.png" width="600"><br>
+  <img src="Diagramas/Images/Tapa_modelado.png" width="500"><br>
+  <em>Modelado base del porta-marcador</em>
+</p>
+
+Luego de la impresión 3D las piezas identicas al modelado se observan a continuación.
+
+<p align="center">
+  <img src="Diagramas/Images/Porta-marcador ensamblado.jpeg" width="500"><br>
   <em>Modelado base del porta-marcador</em>
 </p>
 
 
+Los datos del TCP calibrado (Tooldata) son:
 ```rapid
 PERS tooldata Marcador := [
   TRUE,
