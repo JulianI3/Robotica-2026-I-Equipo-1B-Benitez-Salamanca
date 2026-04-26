@@ -9,7 +9,7 @@
 | Nombre | URL del Repositorio |
 |--------|-------------------|
 | Julian Benitez | *(agregar URL)* |
-| Juan Salamanca | *(agregar URL)* |
+| Juan Salamanca | https://github.com/JuanSalan |
 
 ---
 
