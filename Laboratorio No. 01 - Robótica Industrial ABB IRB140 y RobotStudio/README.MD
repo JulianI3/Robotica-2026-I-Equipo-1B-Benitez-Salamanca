@@ -217,6 +217,21 @@ Si DI_02 = 1:
 
 Para la simulación se utilizó herramientas de control y operación del tipo smart component, estas permitian implementar una lógica tal que permitiese realizar una óptima ejecución del problema.  El diagrama de flujo de operación es el siguiente.
 
+<p align="center">
+  <img src="Diagramas/Images/smart_components.png" width="700"><br>
+  <em>Smart components</em>
+</p>
+
+El funcionamiento correponde al siguiente
+-El sistema inicia en estado de reposo con las salidas en 0.
+-Se reciben las señales de entrada (DI_01 y DI_02) que habilitan la lógica del sistema.
+-Las señales de entrada pasan por la compuerta lógica AND, determinando si se cumplen las condiciones para activar el movimiento; las condiciones corresponen a una salida nula de la detección de los sensores junto con la activación de la señal de entrada.
+-Se habilita el LinearMover, el objeto comienza su desplazamiento (simulación de banda transportadora).
+-Durante el movimiento, el objeto pasa por el primer sensor (PlaneSensor1); al detectar el objeto genera una señal activa que permite la ejecución del programa de movimiento del ABB además de activar una señal de salida; esta misma señal detiene el movimiento ejecutado por el LinearMover puesto que anula la primera compuerta AND.
+-Una vez culminado el movimiento del robot se activa una segunda señal de entrada para continuar ejecutando el movimiento de la banda transportadora.
+-El objeto continúa su trayectoria hasta el segundo sensor (PlaneSensor_2); al detectar el objeto genera una segunda señal de salida y se anula la señal de la compuerta AND para anular nuevamente el movimiento del LinearMover, culminando la ejecución del programa.
+
+
 
 ## Referencias
 
