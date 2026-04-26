@@ -189,7 +189,9 @@ Si DI_02 = 1:
 | `Path_Home` | Lleva el robot a la posición home global con `tool0` y `wobj0`. |
 
 ---
+### Smart Components
 
+Para la simulación se utilizó herramientas de control y operación del tipo smart component, estas permitian implementar una lógica tal que permitiese realizar una óptima ejecución del problema.  El diagrama de flujo de operación es el siguiente.
 
 ## Referencias
 
