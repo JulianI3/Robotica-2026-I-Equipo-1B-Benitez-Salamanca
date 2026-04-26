@@ -68,14 +68,14 @@ Como segunda pieza complementaria se diseña una tapa que permitirá posicionar 
 
 <p align="center">
   <img src="Diagramas/Images/Tapa_modelado.png" width="500"><br>
-  <em>Modelado base del porta-marcador</em>
+  <em>Modelado tapa del porta-marcador</em>
 </p>
 
 Luego de la impresión 3D las piezas identicas al modelado se observan a continuación.
 
 <p align="center">
   <img src="Diagramas/Images/Porta-marcador ensamblado.jpeg" width="500"><br>
-  <em>Modelado base del porta-marcador</em>
+  <em>Porta-marcador impreso y ensamblado</em>
 </p>
 
 
