@@ -8,7 +8,7 @@
 
 | Nombre | URL del Repositorio |
 |--------|-------------------|
-| Julian Benitez | *(agregar URL)* |
+| Julian Benitez | https://github.com/JulianI3 |
 | Juan Salamanca | https://github.com/JuanSalan |
 
 ---
